@@ -1,0 +1,32 @@
+.formBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+}
+.formBlock__input {
+  width: 300px;
+  border: 1px solid black;
+  padding: 7px 15px;
+  margin: 5px;
+  border-radius: 5px;
+}
+.formBlock__error {
+  color: rgb(212, 45, 45);
+  margin: 5px 0 5px 25px;
+}
+
+.formBlock__submit {
+  width: 150px;
+  height: 35px;
+  color: white;
+  background-color: rgb(44, 139, 44);
+  border-radius: 12px;
+}
+.submit {
+  margin-top: 30px;
+}
+.formBlock__submit:hover {
+  background-color: rgb(35, 109, 35);
+}

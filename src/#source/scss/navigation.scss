@@ -1,0 +1,20 @@
+.navigationBlock {
+  padding: 100px 0 0 50px;
+  border-right: 1px solid #f2f2f2;
+  height: 100vh;
+  flex-grow: 1;
+}
+.navigationBlock__list {
+}
+.list {
+  padding: 10px 0;
+}
+.navigationBlock__text {
+  font-size: 1.2em;
+  color: rgb(0, 0, 0);
+}
+.navigationBlock__text:hover {
+  color: #6b6b6b;
+  padding-left: 20px;
+  border-left: 1px solid black;
+}

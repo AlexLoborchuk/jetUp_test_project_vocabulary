@@ -1,0 +1,38 @@
+.vocabularyPage {
+  flex-grow: 10;
+}
+.vocabularyBlock {
+  display: flex;
+  justify-content: space-around;
+  width: 70%;
+  margin: 2px auto;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+.vocabularyPage__title {
+  font-size: 2rem;
+}
+.title {
+  margin: 70px 0 0 40px;
+}
+.vocabularyPage__subtitle {
+  font-size: 1.1rem;
+  color: #b6b6b6;
+}
+.subtitle {
+  margin: 12px 0 50px 41px;
+}
+.vocabularyBlock__text {
+  font-size: 1.3rem;
+}
+.text {
+  padding: 10px;
+  width: 10%;
+}
+.bodyText {
+  margin-top: 150px;
+  text-align: center;
+}
+.vocabularyBlock__border {
+  border-left: 1px solid black;
+}

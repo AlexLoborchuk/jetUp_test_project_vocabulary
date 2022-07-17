@@ -1,0 +1,11 @@
+@import "nullstyle.scss";
+@import "navigation.scss";
+@import "vocabulary_page.scss";
+@import "add_new_word_page.scss";
+@import "test_page.scss";
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
+}

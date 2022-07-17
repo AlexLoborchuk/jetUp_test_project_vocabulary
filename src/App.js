@@ -1,24 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  Navigate,
+} from "react-router-dom";
+import { VocabularyPage } from "./page/vocabulary_page/vocabulary_page";
+import { AddNewWordPage } from "./page/add_new_word_page/add_new_word_page";
+import { Navigation } from "./page/components/navigation";
+import { TestingNewWordPage } from "./page/testing_new word_page/testing_new_word_page";
+
+import "./#source/scss/css/style.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="wrapper">
+        <Navigation />
+        <Routes>
+          <Route exact path="/" element={<Navigate to="/main" />} />
+          <Route path="/main" element={<VocabularyPage />} />
+          <Route path="/test" element={<TestingNewWordPage />} />
+          <Route path="/add_words" element={<AddNewWordPage />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
